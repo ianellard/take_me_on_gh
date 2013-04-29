@@ -1,0 +1,36 @@
+body{
+	font-family:Georgia;
+	background-color:#FFFFFE;
+}
+div{
+	width:100%;
+	background-color:#FDFCDC;
+	box-shadow:2px 2px 5px gray;
+	padding:16px;
+	margin: 0px 0px 0px -8px;
+	font-size:16px;
+}
+.header{
+	background-color:#F0F8FF;
+	margin: -8px 0px 0px 0px;
+}
+.footer{
+	background-color:#C1CDCD;
+}
+h1{
+	font-size:24px;
+	color:#000000;
+}
+#submit{
+	padding:4px;
+	font-size:16px;
+	border-radius:2px;
+	box-shadow:2px 2px 3px white;
+	background-color:#DC143C;
+	font-family:Georgia;
+}
+textarea{
+	font-family:Georgia;
+	font-size:16px;
+	padding:4px;
+}
