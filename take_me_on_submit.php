@@ -11,7 +11,8 @@
 	}
 	$name = $_POST["name"];
 	$prose = $_POST["prose"];
-	mysql_query("INSERT INTO submissions (`submissionid`, `name`, `prose`) VALUES (NULL, '$name', '$prose');");
+	$editor_select = $_POST["editor_select"];
+	mysql_query("INSERT INTO submissions (`submissionid`, `name`, `prose`, `editor1`) VALUES (NULL, '$name', '$prose', '$editor_select');");
 	?>
 
 <html>
@@ -20,16 +21,18 @@
 </head>
 <body>
 <div class="header"><h1>Take Me On (alpha)</h1></div>
-<div>
-	Hi there, <?php echo $_POST["name"]; ?>!<br>
+<div class="main">
+	<fieldset>
+		Hi there, <?php echo $_POST["name"]; ?>!<br>
 	You just submitted the following prose: <br>
 	<?php echo $_POST["prose"];?>
+</fieldset>
 </div>
 <div class="footer">
-	<?php
+	<h2><?php
 date_default_timezone_set('Europe/London');
 echo "Today's date is ". date('d-m-y'); 
-	?>
+	?></h2>
 </div>
 </body>
 </html>

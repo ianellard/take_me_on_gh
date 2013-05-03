@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 <head>
 	<LINK href="TMO_CSS.css" rel="stylesheet" type="text/css">
@@ -15,17 +17,18 @@
 </div>
 <div class="main">
 	<fieldset>
-	<form name="submission_form" action="take_me_on_submit.php" method="post">
-		<textarea name="name" cols=30 onfocus="if(this.value=='Enter your name')this.value='';">Enter your name</textarea><br>
-			<textarea name="prose" rows=5 cols=30 onfocus="if(this.value=='Copy your prose in here.')this.value='';">Copy your prose in here.</textarea><br><br>
-			Please select an editor: <select name="editor_select">
-			<option value=1>Sarah Savitt</option>
-			<option value=2>Hannah Griffiths</option>
-			</select><br><br>
-			  I have agreed to the terms and conditions: <input type="checkbox" name="tsandcs" value="yes"><br><br>
-			<input type="submit" value="Let's do this" id="submit">
-	</form>
+			<legend>Let's get you signed up, shall we?</legend>
+	<div id="signupcontainer">
+		<form name="editor_sign_up" action="create_editor.php" method="post">
+			Choose a username: <input type="text" name="new_username" cols=30 onfocus="if(this.value=='Choose a username')this.value='';" id="signup"><br><br>
+			Choose a password: <input type="password" name="new_password" cols=30 onfocus="if(this.value=='Choose a password')this.value='';" id="signup"><br><br>
+			Confirm your password: <input type="password" name="confirm_password" cols=30 onfocus="if(this.value=='Confirm your password')this.value='';" id="signup"><br><br>
+			Enter your email address: <input type="text" name="editor_email" cols=30 onfocus="if(this.value=='Confirm your password')this.value='';" id="signup"><br><br>
+			<input type="submit" value="Sign up" id="submit2">
+		</form>
+		</div>
 	</fieldset>
+	
 </div>
 </div>
 <div class="footer">
